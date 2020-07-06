@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="AuthSys.Student"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AuthSys"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="500">
+            <ListBoxItem HorizontalContentAlignment="Center">
+                <TextBlock x:ConnectionId='5' Name="StudentName" Text="Student"/>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <Button x:ConnectionId='4' Name="ButShowRec" Content="Show estimations"                         />
+            </ListBoxItem>
+            
+            <ListBoxItem>
+                <ListView>
+                    <ListBox x:ConnectionId='3' Name="RecordsBox"/>
+                </ListView>
+            </ListBoxItem>
+            
+        </ListBox>
+
+        <Button x:ConnectionId='2' Name="GoMainMenu" Content="Exit"                           HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Page>
+

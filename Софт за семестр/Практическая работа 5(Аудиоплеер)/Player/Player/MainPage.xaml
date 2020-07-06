@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Player.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Player"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox Name="List">
+            <ListBoxItem HorizontalAlignment="Center">
+                <Button Name="File" Content="File" Width="500" Height="50" FontSize="12dp" FontStyle="Italic" ToolTipService.ToolTip="Change a file" Click="File_Click"/>
+            </ListBoxItem>
+            <ListBoxItem HorizontalAlignment="Center">
+                <Button Name="Playlists" Content="Playlists" Width="500" Height="50" FontSize="12dp" FontStyle="Italic" ToolTipService.ToolTip="Change a playlist" Click="Playlists_Click"/>
+            </ListBoxItem>
+            <ListBoxItem HorizontalAlignment="Center">
+                <TextBlock Name="NameMusic" Text="Name music: " FontSize="12dp" FontStyle="Italic"></TextBlock>
+            </ListBoxItem>
+            <ListBoxItem HorizontalAlignment="Center">
+                <TextBlock Name="Help" Text="Volume: " FontSize="12dp" FontStyle="Italic"/>
+            </ListBoxItem>
+            <ListBoxItem HorizontalAlignment="Center">
+                <Slider x:Name="VolumeProgress" Width="440" Height="50" Minimum="0" Maximum="100" Value="100" FlowDirection="LeftToRight" UseLayoutRounding="True" ToolTipService.ToolTip="Volume Progress" ValueChanged="VolumeProgress_ValueChanged"/>
+            </ListBoxItem>
+            <ListBoxItem HorizontalAlignment="Center">
+                <Button Name="Play" Content="Play" Width="500" Height="50" FontSize="12dp" FontStyle="Italic" HorizontalAlignment="Center" ToolTipService.ToolTip="Play" Click="Play_Click"/>
+            </ListBoxItem>
+
+        </ListBox>
+
+        <ScrollViewer Name="ScrollPlaylist" Grid.Column="1" Visibility="Collapsed">
+            <ListBox Name="Playlist" Grid.Column="1">
+                <ListBoxItem HorizontalAlignment="Center">
+                </ListBoxItem>
+            </ListBox>
+        </ScrollViewer>
+        
+        <MediaElement Name="Player" MediaEnded="Player_MediaEnded"/>
+
+    </Grid>
+</Page>

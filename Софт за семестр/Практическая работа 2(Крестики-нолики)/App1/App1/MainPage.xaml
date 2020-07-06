@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="590,66,0,0" Text="Крестики-нолики" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="288" SelectionChanged="TextBlock_SelectionChanged" FontSize="32" FontWeight="Bold" FontFamily="Castellar"/>
+        <Button x:Name="but0" Content="Старт" Margin="583,658,0,0" VerticalAlignment="Top" Width="288" Height="53" FontWeight="Bold" FontSize="32" FontFamily="Castellar" Click="but0_Click"/>
+        <CheckBox x:Name="player_type" Content="Человек" Margin="639,522,0,0" VerticalAlignment="Top" Height="34" FontFamily="Castellar" Width="184" FontWeight="Bold" FontSize="24" IsChecked="True"/>
+        <Button x:Name="but1" Content="" Margin="566,146,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <Button x:Name="but2" Content="" Margin="685,146,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <Button x:Name="but3" Content="" Margin="808,146,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <Button x:Name="but4" Content="" Margin="566,273,0,0" VerticalAlignment="Top" Width="100" Height="100" Click="but4_Click_1"/>
+        <Button x:Name="but5" Content="" Margin="685,273,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <Button x:Name="but6" Content="" Margin="808,273,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <Button x:Name="but7" Content="" Margin="566,400,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <Button x:Name="but8" Content="" Margin="685,400,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <Button x:Name="but9" Content="" Margin="808,400,0,0" VerticalAlignment="Top" Width="100" Height="100"/>
+        <TextBlock x:Name="count_x" HorizontalAlignment="Left" Margin="66,126,0,0" Text="Счет X: 0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="178" FontWeight="Bold" FontFamily="Castellar" FontSize="24"/>
+        <TextBlock x:Name="count_o" HorizontalAlignment="Left" Margin="66,179,0,0" Text="Счет O: 0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="178" FontWeight="Bold" FontFamily="Castellar" FontSize="24"/>
+        <Button x:Name="but10" Content="Рестарт" Margin="583,582,0,0" VerticalAlignment="Top" Width="288" Height="53" FontWeight="Bold" FontSize="32" FontFamily="Castellar"/>
+
+    </Grid>
+</Page>

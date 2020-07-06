@@ -1,0 +1,1 @@
+C:\Users\Sajeruk\source\repos\AuthSys\AuthSys\AuthSys.csproj;x86

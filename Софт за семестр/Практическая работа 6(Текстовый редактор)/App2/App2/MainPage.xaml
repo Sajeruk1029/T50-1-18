@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <controls:MenuBar VerticalAlignment="Top" Grid.Row="0">
+            <controls:MenuBarItem Title="File">
+                <MenuFlyoutItem Text="Open" Click="MenuFlyoutItem_Click_Open"/>
+                <MenuFlyoutItem Text="Save" Click="MenuFlyoutItem_Click_Save"/>
+                <MenuFlyoutItem Text="Save as" Click="MenuFlyoutItem_Click_Save_as"/>
+                <MenuFlyoutItem Text="Print" Click="MenuFlyoutItem_Click_Print"/>
+                <MenuFlyoutItem Text="Close" Click="MenuFlyoutItem_Click_Close"/>
+            </controls:MenuBarItem>
+
+            <controls:MenuBarItem Title="Correction">
+                <MenuFlyoutItem Text="Back" Click="MenuFlyoutItem_Click_Back"/>
+                <MenuFlyoutItem Text="Cut" Click="MenuFlyoutItem_Click_Cut"/>
+                <MenuFlyoutItem Text="Copy" Click="MenuFlyoutItem_Click_Copy"/>
+                <MenuFlyoutItem Text="Paste" Click="MenuFlyoutItem_Click_Paste"/>
+                <MenuFlyoutItem Text="Delete" Click="MenuFlyoutItem_Click_Del"/>
+                <MenuFlyoutItem Text="Select all" Click="MenuFlyoutItem_Click_SelectALL"/>
+                <MenuFlyoutItem Text="Find" Click="MenuFlyoutItem_Click_Find"/>
+                <MenuFlyoutItem Text="Replace" Click="MenuFlyoutItem_Click_Replace"/>
+            </controls:MenuBarItem>
+
+            <controls:MenuBarItem Title="Help">
+                <MenuFlyoutItem Text="Help" Click="MenuFlyoutItem_Help"/>
+                <MenuFlyoutItem Text="About the program" Click="MenuFlyoutItem_AboutProgram"/>
+            </controls:MenuBarItem>
+        </controls:MenuBar>
+
+        <Grid VerticalAlignment="Top" Grid.Row="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="28"/>
+                <ColumnDefinition Width="28"/>
+                <ColumnDefinition Width="33"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="BoldText" Content="B" FontWeight="Normal" Grid.Row="0" Grid.Column="0" Click="BoldText_Click"/>
+            <Button Name="ItalicText" Content="K" FontStyle="Italic" Grid.Row="0" Grid.Column="1" Click="ItalicText_Click"/>
+            <Button Name="Podchernutiy" Content="T_" Grid.Row="0" Grid.Column="2" Click="Podchernutiy_Click"/>
+            <ComboBox Name="FontsSelect" PlaceholderText="Fonts" Grid.Row="0" Grid.Column="3"/>
+            <TextBox Name="SizeText" PlaceholderText="SizeText" Grid.Row="0" Grid.Column="4" TextChanging="SizeText_TextChanging"/>
+            <ComboBox Name="ColorText" PlaceholderText="ColorText" Grid.Row="0" Grid.Column="5">
+                <ComboBoxItem>
+                    <TextBlock Text="Black"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="White"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Red"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Green"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Blue"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Yellow"></TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+
+            <RichEditBox Name="Edit" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" Grid.ColumnSpan="6"/>
+
+
+
+
+        </Grid>
+
+    </Grid>
+</Page>

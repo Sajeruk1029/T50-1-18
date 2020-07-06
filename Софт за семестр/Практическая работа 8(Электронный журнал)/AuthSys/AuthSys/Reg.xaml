@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="AuthSys.Reg"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AuthSys"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="500">
+            <ListBoxItem HorizontalContentAlignment="Center">
+                <TextBlock Text="Sign in"/>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <TextBox Name="AuthLogin" PlaceholderText="Login"/>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <PasswordBox Name="AuthPasswd" PlaceholderText="Password"/>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <ComboBox Name="AuthRol" PlaceholderText="Type" DropDownClosed="AuthRol_DropDownClosed"/>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <ComboBox Name="AuthGroup" PlaceholderText="Group" IsEnabled="False"/>
+            </ListBoxItem>
+            
+            <ListBoxItem>
+                <Button Name="ButReg" Content="Sign in" Click="ButReg_Click"/>
+            </ListBoxItem>
+
+        </ListBox>
+
+        <Button Name="GoMainMenu" Content="Return to auth" Click="GoMainMenu_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="App4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:ConnectionId='2' x:Name="Name" HorizontalAlignment="Left" Margin="300,56,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" AutomationProperties.HelpText="Имя" PlaceholderText="Имя" MaxLength="20"                                                            />
+        <TextBox x:ConnectionId='3' x:Name="Otchestvo" HorizontalAlignment="Left" Margin="300,172,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" AutomationProperties.HelpText="Отчество" PlaceholderText="Отчество" MaxLength="20"                                                                      />
+        <TextBox x:ConnectionId='4' x:Name="Surname" HorizontalAlignment="Left" Margin="300,114,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" AutomationProperties.HelpText="Фамилия" PlaceholderText="Фамилия" MaxLength="20"                                                                  />
+        <TextBox x:ConnectionId='5' x:Name="email" HorizontalAlignment="Left" Margin="300,228,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" AutomationProperties.HelpText="Емаил" PlaceholderText="Емаил" MaxLength="20"                                  />
+        <TextBox x:ConnectionId='6' x:Name="login" HorizontalAlignment="Left" Margin="300,282,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" AutomationProperties.HelpText="Логин" PlaceholderText="Логин" MaxLength="20"                                  />
+        <PasswordBox x:ConnectionId='7' x:Name="password" HorizontalAlignment="Left" Margin="300,339,0,0" VerticalAlignment="Top" Width="194" MaxLength="20" PlaceholderText="Пароль"                                             />
+        <CalendarDatePicker x:ConnectionId='8' x:Name="Data" Margin="300,394,0,0" VerticalAlignment="Top" Width="194" PlaceholderText="Дата рождения"/>
+        <Button x:ConnectionId='9' x:Name="rec" Content="Запись" Margin="300,505,0,0" VerticalAlignment="Top" Width="194"                  />
+        <Button x:ConnectionId='10' x:Name="Next" Content="Следующая" Margin="300,560,0,0" VerticalAlignment="Top" Width="194"                   />
+        <RadioButton x:ConnectionId='11' x:Name="Man" Content="Мужчина" Margin="277,468,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:ConnectionId='12' x:Name="Woman" Content="Женщина" Margin="425,468,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='13' x:Name="sobaka" HorizontalAlignment="Left" Margin="494,225,0,0" Text="@" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:ConnectionId='14' x:Name="domen" HorizontalAlignment="Left" Margin="513,225,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" AutomationProperties.HelpText="Емаил" PlaceholderText="Домен" MaxLength="20"                                  />
+
+    </Grid>
+</Page>
+

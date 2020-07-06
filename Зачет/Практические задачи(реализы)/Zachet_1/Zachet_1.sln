@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zachet_1", "Zachet_1\Zachet_1.csproj", "{CAE2028A-6CE7-4457-8FC7-9D236E80B831}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|ARM.Build.0 = Debug|ARM
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|ARM.Deploy.0 = Debug|ARM
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|ARM64.Build.0 = Debug|ARM64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|x64.ActiveCfg = Debug|x64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|x64.Build.0 = Debug|x64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|x64.Deploy.0 = Debug|x64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|x86.ActiveCfg = Debug|x86
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|x86.Build.0 = Debug|x86
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Debug|x86.Deploy.0 = Debug|x86
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|ARM.ActiveCfg = Release|ARM
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|ARM.Build.0 = Release|ARM
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|ARM.Deploy.0 = Release|ARM
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|ARM64.ActiveCfg = Release|ARM64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|ARM64.Build.0 = Release|ARM64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|ARM64.Deploy.0 = Release|ARM64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|x64.ActiveCfg = Release|x64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|x64.Build.0 = Release|x64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|x64.Deploy.0 = Release|x64
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|x86.ActiveCfg = Release|x86
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|x86.Build.0 = Release|x86
+		{CAE2028A-6CE7-4457-8FC7-9D236E80B831}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98F4F1A5-CE8E-4FFB-A1AC-6FAC9F251C95}
+	EndGlobalSection
+EndGlobal

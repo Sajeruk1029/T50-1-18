@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Zachet_5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Zachet_5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot>
+            <PivotItem Header="List">
+                <ListBox Name="ListOfTexts"/>
+            </PivotItem>
+            <PivotItem Header="Controls">
+                <StackPanel>
+                    <Button Name="AddBut" Content="+" Click="AddBut_Click"/>
+                    <Button Name="RefreshBut" Content="R" Click="RefreshBut_Click"/>
+                    <Button Name="DeleteBut" Content="D" Click="DeleteBut_Click"/>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

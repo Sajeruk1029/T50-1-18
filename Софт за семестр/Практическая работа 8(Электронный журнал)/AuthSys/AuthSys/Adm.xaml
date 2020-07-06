@@ -1,0 +1,106 @@
+﻿<Page
+    x:Class="AuthSys.Adm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AuthSys"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <!--
+        <ListBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="500">
+            <ListBoxItem HorizontalContentAlignment="Center">
+                <TextBlock Text="Adm"/>
+            </ListBoxItem>
+
+        </ListBox>
+            -->
+        
+        <Pivot Title="Administator">
+            <PivotItem Header="Subjects">
+                <Pivot>
+                    <PivotItem Header="Control">
+                        <StackPanel>
+                            <Button Name="ButSubjectAdd" Content="+" Click="ButSubjectAdd_Click"/>
+                            <Button Name="ButSubjectChg" Content="R" Click="ButSubjectChg_Click"/>
+                            <Button Name="ButSubjectDel" Content="D" Click="ButSubjectDel_Click"/>
+                        </StackPanel>
+                    </PivotItem>
+
+                    <PivotItem Header="List">
+                        <StackPanel>
+
+                            <ListView>
+                                <ListBox Name="SubjectBox">
+
+                                </ListBox>
+
+                            </ListView>
+
+
+                        </StackPanel>
+
+                    </PivotItem>
+                </Pivot>
+                
+
+            </PivotItem>
+
+            <PivotItem Header="Groups">
+                <StackPanel>
+                    <Pivot>
+                        <PivotItem Header="Control">
+                            <StackPanel>
+                                <Button Name="ButGroupAdd" Content="+" Click="ButGroupAdd_Click"/>
+                                <Button Name="ButGroupChg" Content="R" Click="ButGroupChg_Click"/>
+                                <Button Name="ButGroupDel" Content="D" Click="ButGroupDel_Click"/>
+                            </StackPanel>
+                          
+                        </PivotItem>
+
+                        <PivotItem Header="List">
+                            <StackPanel>
+
+                                <ListView>
+                                    <ListBox Name="GroupsBox">
+                                        
+                                    </ListBox>
+
+                                </ListView>
+
+
+                            </StackPanel>
+
+                        </PivotItem>
+                        
+                    </Pivot>
+                </StackPanel>
+            </PivotItem>
+
+            <PivotItem Header="Users">
+                <Pivot>
+                    <PivotItem Header="Control">
+                        <StackPanel>
+                            <Button Name="ButUserChg" Content="R" Click="ButUserChg_Click"/>
+                            <Button Name="ButUserDel" Content="D" Click="ButUserDel_Click"/>
+                        </StackPanel>
+                    </PivotItem>
+
+                    <PivotItem Header="List">
+                        <controls:DataGrid Name="TableUsers" AutoGenerateColumns="True" IsReadOnly="True"/>
+                    </PivotItem>
+                    
+                </Pivot>
+            </PivotItem>
+            
+        </Pivot>
+        
+        <Button Name="GoMainMenu" Content="Exit" Click="GoMainMenu_Click"  HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Button Name="PrintJournal" Content="Export data" Click="PrintJournal_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Page>
